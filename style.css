@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color:rgba(0, 0, 0, 0.851) ;
 }
 
 html {
@@ -44,7 +45,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -58,6 +59,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: white;
 }
 
 .logo:hover {
@@ -74,21 +76,6 @@ a:hover {
   display: inline-block;
 }
 
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
 
 .menu-links {
   position: absolute;
@@ -106,7 +93,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -119,29 +106,9 @@ a:hover {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
 
 /* SECTIONS */
 
@@ -183,6 +150,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  color: rgba(255, 255, 255, 0.81);
 }
 
 .section__text__p2 {
@@ -193,6 +161,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: white;
 }
 
 #socials-container {
@@ -233,8 +202,8 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn-color-1:hover,
+.btn-color-2 {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -248,7 +217,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgba(255, 255, 255, 0.595) 0.1rem solid;
 }
 
 .btn-container {
@@ -269,6 +238,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+
 }
 
 .about-containers,
@@ -289,11 +259,17 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: rgba(252, 252, 252, 0.737);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(30, 29, 29) 0.1rem solid;
+  border-color: rgb(26, 25, 25);
   text-align: center;
+}
+.details-container p{
+color: rgb(16, 16, 16);
+}
+.text-container p{
+color: rgba(255, 255, 255, 0.785);
 }
 
 .section-container {
@@ -351,8 +327,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color:rgba(252, 252, 252, 0.737);
+  background: rgb(207, 205, 205);
 }
 
 .project-img {
